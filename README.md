@@ -31,7 +31,7 @@ Terraform code to stand up example full stack web app in Azure with several safe
     sed -i 's/Security488!/YOUR-PASSWORD-HERE/g' main.tf web-build.sh mgmt-build.sh
     ```
 
-5. Run terraform commands.
+5. Run terraform commands (deployment takes roughly 25 minutes to complete).
 
     ```
     terraform init
