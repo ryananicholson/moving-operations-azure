@@ -6,9 +6,9 @@ Terraform code to stand up example full stack web app in Azure with several safe
 
 1. Install prerequisites:
 
-- Linux system (tested in WSL2 Ubuntu)
-- Azure CLI tools
-- Terraform 0.12
+    - Linux system (tested in WSL2 Ubuntu)
+    - Azure CLI tools
+    - Terraform 0.12
 
 2. Clone the repository and change into the new directory.
 
