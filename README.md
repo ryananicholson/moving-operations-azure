@@ -1,4 +1,4 @@
-# Moving Operations to the Cloud
+# Moving Operations to the Cloud - Azure Edition
 
 Terraform code to stand up example full stack web app in Azure with several safeguards. Note that this is far from a secure solution, but just showcasing several cloud-native Azure protections.
 
