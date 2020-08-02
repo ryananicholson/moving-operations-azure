@@ -4,34 +4,34 @@ Terraform code to stand up example full stack web app in Azure with several safe
 
 ## Build Process
 
-Prerequisites:
+1. Install prerequisites:
 
-- Linux system
+- Linux system (tested in WSL2 Ubuntu)
 - Azure CLI tools
 - Terraform 0.12
 
-1. Clone the repository and change into the new directory.
+2. Clone the repository and change into the new directory.
 
     ```
     git clone https://github.com/ryananicholson/moving-operations.git
     cd moving-operations
     ```
     
-2. Log into Azure.
+3. Log into Azure.
 
     ```
     az login
     # Follow appropriate steps displayed in terminal
     ```
     
-3. Change usernames and passwords as you see fit (replace YOUR-USERNAME-HERE and YOUR-PASSWORD-HERE with your username and password of choice).
+4. Change usernames and passwords as you see fit (replace YOUR-USERNAME-HERE and YOUR-PASSWORD-HERE with your username and password of choice).
 
     ```
     sed -i 's/student/YOUR-USERNAME-HERE/g' main.tf web-build.sh mgmt-build.sh
     sed -i 's/Security488!/YOUR-PASSWORD-HERE/g' main.tf web-build.sh mgmt-build.sh
     ```
 
-4. Run terraform commands.
+5. Run terraform commands.
 
     ```
     terraform init
@@ -39,13 +39,13 @@ Prerequisites:
     terraform apply tfplan -auto-approve
     ```
  
-5. View bastion host and web app addresses.
+6. View bastion host and web app addresses.
 
     ```
     cat addresses.txt
     ```
  
-6. When finished, destroy environment.
+7. When finished, destroy environment.
 
     ```
     terraform destroy -auto-approve
