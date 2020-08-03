@@ -36,7 +36,7 @@ Terraform code to stand up example full stack web app in Azure with several safe
     ```
     terraform init
     terraform plan -out tfplan
-    terraform apply tfplan -auto-approve
+    terraform apply -auto-approve tfplan
     ```
  
 6. View bastion host and web app addresses.
